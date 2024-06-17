@@ -39,7 +39,7 @@ const ImageBox: React.FC<ImageBoxProps> = ({
         />
       </Link>
       <p className="text-sm font-poppins">{description}</p>
-      <div className="grid grid-cols-4 mt-2 gap-2 font-thin">
+      <div className="grid grid-cols-3 sm:grid-cols-4 mt-2 gap-2 font-thin">
         {techStack.map((tech) => (
           <Batch key={tech} text={tech} />
         ))}

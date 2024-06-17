@@ -23,7 +23,7 @@ const Topbar: React.FC<TopbarProps> = ({ open, setOpen, isNavOpen }) => {
       </Link>
       {!isNavOpen && (
         <div
-          className={`text-3xl tracking-wider font-normal text-lightprimary delay-300 uppercase`}
+          className={`text-xl sm:text-2xl md:text-3xl tracking-wider font-normal text-lightprimary delay-300 uppercase`}
         >
           Saikat Samanta
         </div>
