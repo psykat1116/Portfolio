@@ -26,13 +26,13 @@ export const metadata: Metadata = {
   icons: [
     {
       media: "(prefers-color-scheme: dark)",
-      href: "/LogoLight.svg",
       url: "/LogoLight.svg",
+      href: "/LogoLight.svg",
     },
     {
       media: "(prefers-color-scheme: light)",
-      href: "/LogoDark.svg",
       url: "/LogoDark.svg",
+      href: "/LogoDark.svg",
     },
   ],
 };
@@ -47,7 +47,7 @@ export default function RootLayout({
       <body
         className={`${myFont.className} ${poppins.variable} ${myFont2.variable}`}
       >
-        <div className="relative h-full w-full flex justify-start items-center bg-[#e2e2e7] flex-col p-3 overflow-hidden">
+        <div className="relative min-h-screen w-full flex justify-start items-center bg-[#e2e2e7] overflow-x-hidden flex-col p-3">
           {children}
         </div>
       </body>

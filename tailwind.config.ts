@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       backgroundColor: {
         lightprimary: "#e2e2e7",
+        redcolor: "#D62E49",
       },
       animation: {
         rtl: "rtl 12s 0.95s linear infinite",
@@ -23,6 +24,10 @@ const config: Config = {
       fontFamily: {
         poppins: "var(--font-poppins)",
         suisse: "var(--font-suisse)",
+      },
+      colors: {
+        redcolor: "#D62E49",
+        lightprimary: "#e2e2e7",
       },
     },
   },

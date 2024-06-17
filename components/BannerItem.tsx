@@ -43,7 +43,7 @@ const BannerItem: React.FC<BannerItemProps> = ({
 }) => {
   return (
     <motion.div
-      className="text-[#e2e2e7] text-[8rem] sm:text-[12rem] flex gap-1 animate-rtl"
+      className="text-[8rem] sm:text-[12rem] flex gap-1 animate-rtl text-lightprimary"
       variants={container}
       initial="initial"
       animate="open"

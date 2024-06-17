@@ -19,7 +19,7 @@ const Navbar = () => {
         ref={NavRef}
       >
         <div
-          className={`w-full bg-[#e2e2e7] h-[80vh] text-[#010101] ${
+          className={`w-full bg-lightprimary h-[80vh] text-[#010101] ${
             open ? "translate-y-0" : "-translate-y-[80vh]"
           } transition-all duration-700 flex flex-col items-center justify-start pl-0 pr-6 ease-in-out z-[5] gap-5`}
         >

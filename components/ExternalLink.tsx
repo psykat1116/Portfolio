@@ -39,8 +39,8 @@ const Links = [
 const ExternalLink = () => {
   return (
     <div className="flex items-center justify-between gap-5 text-xl">
-      {Links.map((link) => (
-        <>
+      {Links.map((link, index) => (
+        <div key={index}>
           <Link
             href={link.href}
             target="_blank"
@@ -55,7 +55,7 @@ const ExternalLink = () => {
           >
             <link.icon />
           </Link>
-        </>
+        </div>
       ))}
     </div>
   );

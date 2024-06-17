@@ -11,7 +11,7 @@ interface TopbarProps {
 
 const Topbar: React.FC<TopbarProps> = ({ open, setOpen, isNavOpen }) => {
   return (
-    <nav className="relative w-full pl-5 pr-12 pt-5 flex items-center justify-between transiton-all gap-5">
+    <nav className="relative w-full pl-5 pr-8 pt-5 flex items-center justify-between transiton-all gap-5">
       <Link href={"/"} className="h-10 w-10 flex items-center justify-center">
         <Image
           src={!open ? "/LogoLight.svg" : "/LogoDark.svg"}
@@ -23,18 +23,9 @@ const Topbar: React.FC<TopbarProps> = ({ open, setOpen, isNavOpen }) => {
       </Link>
       {!isNavOpen && (
         <div
-          className={`text-2xl tracking-wider font-normal text-[#e2e2e7] ${
-            open ? "opacity-0 select-none" : "opacity-100 select-auto"
-          } delay-300 flex gap-1 uppercase`}
+          className={`text-3xl tracking-wider font-normal text-lightprimary delay-300 uppercase`}
         >
-          Saikat Samanta{" "}
-          <Link
-            className="hidden md:block"
-            href="https://maps.app.goo.gl/gWAKzAHU6ic2Ycpp8"
-            target="_blank"
-          >
-            | Jalpaiguri Governement Engineering College
-          </Link>
+          Saikat Samanta
         </div>
       )}
       <ShuffleButton open={open} setOpen={setOpen} isNavOpen={isNavOpen} />
