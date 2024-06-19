@@ -9,7 +9,7 @@ const Project = () => {
     <div className="p-5 w-full min-h-full font-bold text-lightprimary">
       <div className="flex items-center">
         <Marker />
-        <div className="ml-2 text-xl tracking-wider">Projects</div>
+        <div className="ml-2 text-2xl tracking-wider">Projects</div>
       </div>
       <div className="flex flex-col w-full items-start justify-start gap-5 mt-5">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">

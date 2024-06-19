@@ -22,7 +22,7 @@ const Navbar = () => {
         <div
           className={`w-full bg-lightprimary h-[80vh] text-[#010101] ${
             open ? "translate-y-0" : "-translate-y-[80vh]"
-          } transition-all duration-700 flex flex-col items-center justify-start ease-in-out z-[5] gap-5`}
+          } transition-all duration-700 flex flex-col items-center justify-between ease-in-out z-[5] gap-5 pb-5`}
         >
           <Topbar open={open} setOpen={setOpen} isNavOpen />
           <div className="flex items-center text-7xl flex-col justify-between gap-6 w-full">

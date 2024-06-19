@@ -1,19 +1,28 @@
 "use client";
-import React from "react";
+import React, { ElementRef, useRef, useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import { toast } from "sonner";
 import { IoIosSend } from "react-icons/io";
 
 const ContactForm = () => {
+  const formRef = useRef<ElementRef<"form">>(null);
   const [state, handleSubmit] = useForm("xpwaaaaz");
-  if (state.succeeded) {
+  const [values, setValues] = useState({
+    email: "",
+    message: "",
+  });
+
+  if (values.email !== "" && values.message !== "" && state.succeeded) {
     toast.success("Thanks For Contacting Me!");
+    formRef?.current?.reset();
     setTimeout(() => {
       toast.dismiss();
     }, 3000);
   }
+  
   return (
     <form
+      ref={formRef}
       onSubmit={handleSubmit}
       className="w-full md:w-1/2 flex flex-col items-start"
     >
@@ -27,8 +36,9 @@ const ContactForm = () => {
         className="bg-transparent text-2xl border-2 border-solid border-['#eeeef2'] p-2 rounded-sm focus-visible:outline-none mt-1 w-full tracking-wider"
         placeholder="Enter Your Email"
         autoComplete="off"
-        aria-autocomplete="none"
         required
+        value={values.email}
+        onChange={(e) => setValues({ ...values, email: e.target.value })}
       />
       <ValidationError
         prefix="Email"
@@ -45,8 +55,9 @@ const ContactForm = () => {
         className="bg-transparent text-2xl border-2 border-solid border-['#eeeef2'] p-2 rounded-sm focus-visible:outline-none resize-none mt-1 h-64 w-full tracking-wider"
         placeholder="Enter Your Message"
         autoComplete="off"
-        aria-autocomplete="none"
         required
+        value={values.message}
+        onChange={(e) => setValues({ ...values, message: e.target.value })}
       />
       <ValidationError
         prefix="Message"
