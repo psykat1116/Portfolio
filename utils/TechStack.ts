@@ -30,10 +30,11 @@ import {
   SiCockroachlabs,
   SiLodash,
   SiRadixui,
+  SiFormspree,
 } from "react-icons/si";
 import { TbBrandReact, TbBrandDatabricks, TbDragDrop } from "react-icons/tb";
 import { PiConfettiFill } from "react-icons/pi";
-import { FaHtml5, FaCss3 } from "react-icons/fa6";
+import { FaHtml5, FaCss3, FaBell } from "react-icons/fa6";
 import { MdViewKanban } from "react-icons/md";
 
 export type Stack = {
@@ -137,7 +138,7 @@ export const projects: Project[] = [
       { name: "CockroachDB", icon: SiCockroachlabs },
       { name: "Clerk", icon: SiClerk },
       { name: "Stripe", icon: BiLogoStripe },
-      { name: "Sonner", icon: SiReact },
+      { name: "Sonner", icon: FaBell },
       { name: "Unsplash API", icon: RiUnsplashFill },
       { name: "Zod", icon: SiZod },
       { name: "Shadcn UI", icon: SiShadcnui },
@@ -160,7 +161,7 @@ export const projects: Project[] = [
       { name: "Supabase", icon: RiSupabaseFill },
       { name: "Stripe", icon: BiLogoStripe },
       { name: "Zustand", icon: SiReact },
-      { name: "Radix UI", icon: SiRadixui}
+      { name: "Radix UI", icon: SiRadixui },
     ],
     description:
       "It is a clone website of the famous music streaming website known as Spotify made using Next JS, Tailwind CSS, Typescript, Supabase.",

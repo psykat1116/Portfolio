@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Project from "@/components/Project";
 import Seperator from "@/components/Seperator";
 import Experience from "@/components/Experience";
+import Contact from "@/components/Contact";
 
 const Home = () => {
   return (
@@ -14,9 +15,11 @@ const Home = () => {
         <Footer />
       </div>
       <Seperator />
+      <Experience />
+      <Seperator />
       <Project />
       <Seperator />
-      <Experience/>
+      <Contact />
     </div>
   );
 };

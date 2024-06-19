@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React from "react";
-import xss from "xss";
 import { TbHexagonFilled } from "react-icons/tb";
 
 interface JobInternCardProps {
@@ -23,24 +22,21 @@ const JobInternCard: React.FC<JobInternCardProps> = ({
   locationLink,
 }) => {
   return (
-    <div className="flex flex-col items-center w-full">
-      <div className="flex justify-between w-full items-center text-xl tracking-wide">
+    <div className="relative flex flex-col items-center w-full md:w-3/4 pl-8">
+      <TbHexagonFilled className="absolute h-5 w-5 left-0 text-redcolor mt-1" />
+      <div className="flex flex-col sm:flex-row justify-between w-full items-start md:items-center text-lg md:text-xl tracking-wide">
         <h1>{title}</h1>
         <p>{time}</p>
       </div>
-      <div className="flex justify-between w-full items-center text-2xl tracking-wide">
+      <div className="flex flex-col sm:flex-row justify-between w-full items-start md:items-center text-xl md:text-2xl tracking-wide">
         <Link href={companyLink}>{company}</Link>
         <Link href={locationLink}>{companyLocation}</Link>
       </div>
-      <div className="flex flex-col w-full font-normal font-poppins mt-2">
+      <div className="flex flex-col w-full font-normal text-sm md:text-base font-poppins mt-2">
         {lines.map((line) => (
-          <div className="flex items-center" key={line}>
-            <TbHexagonFilled className="text-redcolor mr-2 size-3" />
-            <p
-              dangerouslySetInnerHTML={{
-                __html: xss(line),
-              }}
-            />
+          <div className="flex items-start gap-2" key={line}>
+            <TbHexagonFilled className="text-redcolor h-4 w-4 mt-1" />
+            <p>{line}</p>
           </div>
         ))}
       </div>

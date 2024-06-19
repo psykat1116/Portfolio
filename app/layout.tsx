@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Toaster } from "sonner";
 
 const poppins = Poppins({
   style: ["normal", "italic"],
@@ -47,6 +48,7 @@ export default function RootLayout({
         className={`${myFont.className} ${poppins.variable} ${myFont2.variable}`}
       >
         <div className="relative min-h-screen w-full flex justify-start items-center bg-lightprimary overflow-x-hidden flex-col p-3">
+          <Toaster position="bottom-right" richColors />
           {children}
         </div>
       </body>
