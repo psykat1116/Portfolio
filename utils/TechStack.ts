@@ -1,6 +1,49 @@
-type Project = {
+import { IconType } from "react-icons";
+import {
+  RiBox3Fill,
+  RiEmojiStickerFill,
+  RiNextjsFill,
+  RiSupabaseFill,
+  RiTailwindCssFill,
+  RiUnsplashFill,
+} from "react-icons/ri";
+import {
+  BiLogoJavascript,
+  BiLogoStripe,
+  BiLogoTypescript,
+  BiSolidColor,
+} from "react-icons/bi";
+import {
+  SiFramer,
+  SiChartdotjs,
+  SiPrisma,
+  SiMongodb,
+  SiAuth0,
+  SiAxios,
+  SiLeaflet,
+  SiCloudinary,
+  SiReact,
+  SiClerk,
+  SiShadcnui,
+  SiHiveBlockchain,
+  SiZod,
+  SiCockroachlabs,
+  SiLodash,
+  SiRadixui,
+} from "react-icons/si";
+import { TbBrandReact, TbBrandDatabricks, TbDragDrop } from "react-icons/tb";
+import { PiConfettiFill } from "react-icons/pi";
+import { FaHtml5, FaCss3 } from "react-icons/fa6";
+import { MdViewKanban } from "react-icons/md";
+
+export type Stack = {
+  name: string;
+  icon: IconType;
+};
+
+export type Project = {
   title: string;
-  techStack: string[];
+  techStack: Stack[];
   description: string;
   src: string;
   website: string;
@@ -10,7 +53,15 @@ type Project = {
 export const projects: Project[] = [
   {
     title: "Modern Periodic Table",
-    techStack: ["Next JS", "Tailwind CSS", "Typescript", "Framer Motion"],
+    techStack: [
+      { name: "Next JS", icon: RiNextjsFill },
+      { name: "Tailwind CSS", icon: RiTailwindCssFill },
+      { name: "Typescript", icon: BiLogoTypescript },
+      { name: "Framer Motion", icon: SiFramer },
+      { name: "React Icons", icon: TbBrandReact },
+      { name: "TS Particle", icon: PiConfettiFill },
+      { name: "React ChartJS", icon: SiChartdotjs },
+    ],
     description:
       "A Beautiful, Responsive Periodic Table Web Application made using Next JS 13, Tailwind CSS, Framer Motion, Lottie Flies, Typescript.",
     src: "/Image/Periodic_Table.png",
@@ -19,7 +70,19 @@ export const projects: Project[] = [
   },
   {
     title: "Airbnb Clone",
-    techStack: ["Next JS", "Tailwind CSS", "Typescript", "Prisma", "MongoDB"],
+    techStack: [
+      { name: "Next JS", icon: RiNextjsFill },
+      { name: "Tailwind CSS", icon: RiTailwindCssFill },
+      { name: "Typescript", icon: BiLogoTypescript },
+      { name: "Prisma", icon: SiPrisma },
+      { name: "MongoDB", icon: SiMongodb },
+      { name: "Next Auth", icon: SiAuth0 },
+      { name: "Axios", icon: SiAxios },
+      { name: "Leaflet", icon: SiLeaflet },
+      { name: "Cloudinary", icon: SiCloudinary },
+      { name: "React Form", icon: SiReact },
+      { name: "Zustand", icon: SiReact },
+    ],
     description:
       "Airbnb Clone Is a Clone Website Of The Famouse Hotel Booking Site Airbnb Made Using NextJS 13, Tailwind CSS, Prisma, MongoDB, Next Auth And Much More.",
     src: "/Image/Airbnb.png",
@@ -28,7 +91,19 @@ export const projects: Project[] = [
   },
   {
     title: "Mindcanavs",
-    techStack: ["Next JS", "Tailwind CSS", "Typescript", "Convex"],
+    techStack: [
+      { name: "Next JS", icon: RiNextjsFill },
+      { name: "Tailwind CSS", icon: RiTailwindCssFill },
+      { name: "Typescript", icon: BiLogoTypescript },
+      { name: "Convex", icon: TbBrandDatabricks },
+      { name: "Clerk", icon: SiClerk },
+      { name: "Zustand", icon: SiReact },
+      { name: "Shadcn UI", icon: SiShadcnui },
+      { name: "Edgestore", icon: RiBox3Fill },
+      { name: "Blocknote", icon: SiHiveBlockchain },
+      { name: "Zod", icon: SiZod },
+      { name: "Emoji Picker", icon: RiEmojiStickerFill },
+    ],
     description:
       "MindCanvas is a versatile and powerful workspace that combines notes, tasks, databases in a single platform. Designed to streamline your workflow and boost productivity, MindCanvas allows you to capture your thoughts, manage projects. With customizable templates, rich text formatting.",
     src: "/Image/Mindcanvas.png",
@@ -38,13 +113,13 @@ export const projects: Project[] = [
   {
     title: "Acadeva",
     techStack: [
-      "Next JS",
-      "Tailwind CSS",
-      "Typescript",
-      "Prisma",
-      "CockroachDB",
-      "Clerk",
-      "Stripe",
+      { name: "Next JS", icon: RiNextjsFill },
+      { name: "Tailwind CSS", icon: RiTailwindCssFill },
+      { name: "Typescript", icon: BiLogoTypescript },
+      { name: "Prisma", icon: SiPrisma },
+      { name: "CockroachDB", icon: SiCockroachlabs },
+      { name: "Clerk", icon: SiClerk },
+      { name: "Stripe", icon: BiLogoStripe },
     ],
     description:
       "It is Learning Management System Website Similarly like Udemy Made Using NextJS 13, Tailwind CSS, Typescript, Stripe, Clerk Authentication, Mux Video Player, PostgreSQL, Prisma ORM",
@@ -55,14 +130,20 @@ export const projects: Project[] = [
   {
     title: "Planit",
     techStack: [
-      "Next JS",
-      "Tailwind CSS",
-      "Typescript",
-      "Prisma",
-      "CockroachDB",
-      "Clerk",
-      "Stripe",
-      "Sonner",
+      { name: "Next JS", icon: RiNextjsFill },
+      { name: "Tailwind CSS", icon: RiTailwindCssFill },
+      { name: "Typescript", icon: BiLogoTypescript },
+      { name: "Prisma", icon: SiPrisma },
+      { name: "CockroachDB", icon: SiCockroachlabs },
+      { name: "Clerk", icon: SiClerk },
+      { name: "Stripe", icon: BiLogoStripe },
+      { name: "Sonner", icon: SiReact },
+      { name: "Unsplash API", icon: RiUnsplashFill },
+      { name: "Zod", icon: SiZod },
+      { name: "Shadcn UI", icon: SiShadcnui },
+      { name: "Kanban Board", icon: MdViewKanban },
+      { name: "Lodash", icon: SiLodash },
+      { name: "Drag and Drop", icon: TbDragDrop },
     ],
     description:
       "Planit is a powerful project management tool designed to help you organize, prioritize, and track your tasks with ease. With its intuitive kanban-style boards, Planit allows teams and individuals to visualize their projects, collaborate in real-time, and stay on top of deadlines.",
@@ -73,12 +154,13 @@ export const projects: Project[] = [
   {
     title: "Spotify Clone",
     techStack: [
-      "Next JS",
-      "Tailwind CSS",
-      "Typescript",
-      "Supabase",
-      "Stripe",
-      "Zustand",
+      { name: "Next JS", icon: RiNextjsFill },
+      { name: "Tailwind CSS", icon: RiTailwindCssFill },
+      { name: "Typescript", icon: BiLogoTypescript },
+      { name: "Supabase", icon: RiSupabaseFill },
+      { name: "Stripe", icon: BiLogoStripe },
+      { name: "Zustand", icon: SiReact },
+      { name: "Radix UI", icon: SiRadixui}
     ],
     description:
       "It is a clone website of the famous music streaming website known as Spotify made using Next JS, Tailwind CSS, Typescript, Supabase.",
@@ -88,7 +170,12 @@ export const projects: Project[] = [
   },
   {
     title: "Color World",
-    techStack: ["HTML", "CSS", "Javascript", "Color Palette"],
+    techStack: [
+      { name: "HTML", icon: FaHtml5 },
+      { name: "CSS", icon: FaCss3 },
+      { name: "Javascript", icon: BiLogoJavascript },
+      { name: "Color Palette", icon: BiSolidColor },
+    ],
     description:
       "All Shades Of Colors Pallet Categorized in Different Ways For Designing UI Using HTML, CSS, JS.",
     src: "/Image/Color_World.png",
@@ -98,13 +185,13 @@ export const projects: Project[] = [
   {
     title: "Thread Clone",
     techStack: [
-      "Typecript",
-      "Zustand",
-      "Clerk",
-      "MongoDB",
-      "Shadcn UI",
-      "Next JS",
-      "Tailwind CSS",
+      { name: "Typecript", icon: BiLogoTypescript },
+      { name: "Zustand", icon: SiReact },
+      { name: "Clerk", icon: SiClerk },
+      { name: "MongoDB", icon: SiMongodb },
+      { name: "Shadcn UI", icon: SiShadcnui },
+      { name: "Next JS", icon: RiNextjsFill },
+      { name: "Tailwind CSS", icon: RiTailwindCssFill },
     ],
     description:
       "New Popular Social Media Thread Clone Using The Modern NextJS 13, Clerk, MongoDB, Shadcn UI and Much More.",

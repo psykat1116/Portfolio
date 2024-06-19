@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import BannerItem from "./BannerItem";
 import { AnimatePresence } from "framer-motion";
+import CanvasImage from "./CanvasImage";
 
 const Intro = () => {
   return (
@@ -13,13 +14,14 @@ const Intro = () => {
           <BannerItem />
         </div>
       </AnimatePresence>
-      <div className="absolute h-56 w-56 sm:h-80 sm:w-80 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:h-96 md:w-96">
+      <div className="absolute h-64 w-64 md:h-80 md:w-80 xl:h-96 xl:w-96 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
         <Image
           src="/profile.jpg"
           alt="profile"
           className="relative object-cover filter grayscale"
           fill
         />
+        {/* <CanvasImage /> */}
       </div>
     </div>
   );

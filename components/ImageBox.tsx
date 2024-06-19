@@ -2,11 +2,12 @@ import Image from "next/image";
 import React from "react";
 import Batch from "./Batch";
 import Link from "next/link";
+import { Stack } from "@/utils/TechStack";
 
 interface ImageBoxProps {
   title: string;
   src: string;
-  techStack: string[];
+  techStack: Stack[];
   description: string;
   website: string;
   gitUrl: string;
@@ -25,7 +26,7 @@ const ImageBox: React.FC<ImageBoxProps> = ({
       <Link
         href={gitUrl}
         target="_blank"
-        className="text-2xl tracking-wider uppercase text-right"
+        className="text-lg tracking-wider uppercase text-right"
       >
         {title}
       </Link>
@@ -39,9 +40,9 @@ const ImageBox: React.FC<ImageBoxProps> = ({
         />
       </Link>
       <p className="text-sm font-poppins">{description}</p>
-      <div className="grid grid-cols-3 sm:grid-cols-4 mt-2 gap-2 font-thin">
+      <div className="grid grid-cols-2 md:grid-cols-3 mt-2 gap-2 font-thin">
         {techStack.map((tech) => (
-          <Batch key={tech} text={tech} />
+          <Batch key={tech.name} text={tech.name} icon={tech.icon} />
         ))}
       </div>
     </div>

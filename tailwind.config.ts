@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundColor: {
-        lightprimary: "#e2e2e7",
+        lightprimary: "#eeeef2",
         redcolor: "#D62E49",
       },
       animation: {
@@ -27,7 +27,7 @@ const config: Config = {
       },
       colors: {
         redcolor: "#D62E49",
-        lightprimary: "#e2e2e7",
+        lightprimary: "#eeeef2",
       },
     },
   },

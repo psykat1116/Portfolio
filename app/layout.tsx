@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
 
 const poppins = Poppins({
   style: ["normal", "italic"],
@@ -47,7 +46,7 @@ export default function RootLayout({
       <body
         className={`${myFont.className} ${poppins.variable} ${myFont2.variable}`}
       >
-        <div className="relative min-h-screen w-full flex justify-start items-center bg-[#e2e2e7] overflow-x-hidden flex-col p-3">
+        <div className="relative min-h-screen w-full flex justify-start items-center bg-lightprimary overflow-x-hidden flex-col p-3">
           {children}
         </div>
       </body>
