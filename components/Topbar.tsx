@@ -2,10 +2,8 @@ import React, { useState } from "react";
 import ShuffleButton from "./ShuffleButton";
 import Link from "next/link";
 import Image from "next/image";
-import Text from "./Text";
 import { Words } from "@/utils/Words";
 import { useMediaQuery } from "usehooks-ts";
-import { TbHexagonFilled } from "react-icons/tb";
 
 interface TopbarProps {
   open: boolean;
@@ -43,7 +41,7 @@ const Topbar: React.FC<TopbarProps> = ({ open, setOpen, isNavOpen }) => {
           onMouseLeave={handleEnd}
         >
           <ol
-            className={`transition-all group-hover:text-redcolor duration-1000 ease-in-out ${
+            className={`transition-all group-hover:text-redcolor select-none duration-1000 ease-in-out ${
               isLoaded &&
               "-translate-y-[73.5rem] sm:-translate-y-[84rem] md:-translate-y-[94.5rem]"
             }`}
@@ -52,7 +50,14 @@ const Topbar: React.FC<TopbarProps> = ({ open, setOpen, isNavOpen }) => {
               <li key={word}>{word}</li>
             ))}
           </ol>
-          <p className="text-redcolor">Samanta</p>
+          <p className="text-redcolor select-none">Samanta</p>
+          <Link
+            className="my-1.5 ml-3 px-2 bg-redcolor rounded-sm text-base flex items-center justify-center cursor-pointer"
+            href="https://maroon-ilysa-10.tiiny.site"
+            target="_blank"
+          >
+            Resume
+          </Link>
         </div>
       )}
       <ShuffleButton open={open} setOpen={setOpen} isNavOpen={isNavOpen} />

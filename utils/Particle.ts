@@ -15,7 +15,7 @@ export class Particle {
   constructor(x: number, y: number, color: string) {
     this.x = x;
     this.y = y;
-    this.size = 10;
+    this.size = 1;
     this.baseX = this.x;
     this.baseY = this.y;
     this.density = Math.random() * 150 + 1;
@@ -29,8 +29,8 @@ export class Particle {
     mouse: { x: number; y: number; radius: number },
     image: HTMLImageElement
   ) {
-    const dx = mouse.x - window.innerWidth / 2 + 320 / 2 - this.x;
-    const dy = mouse.y - window.innerHeight / 2 + 320 / 2 - this.y;
+    const dx = mouse.x - window.innerWidth / 2 + image.width / 2 - this.x;
+    const dy = mouse.y - window.innerHeight / 2 + image.height / 2 - this.y;
     const distance = Math.sqrt(dx * dx + dy * dy);
     let fDirectionX = dx / distance;
     let fDirectionY = dy / distance;

@@ -18,7 +18,7 @@ const Intro = () => {
         <Image
           src="/profile.jpg"
           alt="profile"
-          className="relative object-cover filter grayscale"
+          className="relative object-cover filter grayscale rounded-md shadow-md"
           fill
         />
         {/* <CanvasImage /> */}

@@ -6,6 +6,7 @@ export interface ExperienceType {
   lines: string[];
   companyLink: string;
   locationLink: string;
+  imageUrl: string;
 }
 
 export const ExperienceData = [
@@ -22,6 +23,7 @@ export const ExperienceData = [
     ],
     companyLink: "https://celebaltech.com/",
     locationLink: "https://maps.app.goo.gl/Sye3zJXb77fvso326",
+    imageUrl: "/Celebal.png",
   },
   {
     title: "Software Engineer Intern",
@@ -36,5 +38,6 @@ export const ExperienceData = [
     ],
     companyLink: "https://infomaticae.com/",
     locationLink: "https://maps.app.goo.gl/bNqFqxKp4fn92Wuu9",
+    imageUrl: "/Infomaticae.jpeg",
   },
 ];

@@ -5,6 +5,9 @@ import Project from "@/components/Project";
 import Seperator from "@/components/Seperator";
 import Experience from "@/components/Experience";
 import Contact from "@/components/Contact";
+import Education from "@/components/Education";
+import Achievement from "@/components/Achievement";
+import TechSkill from "@/components/TechSkill";
 
 const Home = () => {
   return (
@@ -17,7 +20,13 @@ const Home = () => {
       <Seperator />
       <Experience />
       <Seperator />
+      <Education />
+      <Seperator />
+      <TechSkill />
+      <Seperator />
       <Project />
+      <Seperator />
+      <Achievement />
       <Seperator />
       <Contact />
     </div>
