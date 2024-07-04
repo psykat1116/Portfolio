@@ -16,7 +16,7 @@ const CanvasImage = () => {
       const ctx = canvas.getContext("2d");
       if (!ctx) return;
       const image = new Image();
-      image.src = "Info.jpeg";
+      image.src = "profile4.jpg";
       canvas.height = 256;
       canvas.width = 256;
 

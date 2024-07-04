@@ -8,6 +8,7 @@ import Contact from "@/components/Contact";
 import Education from "@/components/Education";
 import Achievement from "@/components/Achievement";
 import TechSkill from "@/components/TechSkill";
+import Profile from "@/components/Profile";
 
 const Home = () => {
   return (
@@ -21,6 +22,8 @@ const Home = () => {
       <Experience />
       <Seperator />
       <Education />
+      <Seperator />
+      <Profile />
       <Seperator />
       <TechSkill />
       <Seperator />

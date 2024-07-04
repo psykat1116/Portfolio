@@ -29,7 +29,7 @@ const TechSkill = () => {
         <Marker />
         <div className="ml-2 text-2xl tracking-wider">Technical Skills</div>
       </div>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6 gap-3 mt-5">
+      <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 xl:grid-cols-7 gap-3 mt-5">
         {TechCategoryData.map((category: TechCategoryType) => (
           <div
             key={category.url}
@@ -44,7 +44,7 @@ const TechSkill = () => {
           </div>
         ))}
       </div>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-3 mt-5">
+      <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 gap-3 mt-5">
         {filterSkill.map((skill: SkillType) => (
           <Batch
             key={skill.name}

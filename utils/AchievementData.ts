@@ -9,6 +9,10 @@ export const AchievementData: AchievementType[] = [
     link: "https://leetcode.com/u/saikat1116/",
   },
   {
+    title: "3* Coder In Codechef. Max Rating 1608",
+    link: "https://www.codechef.com/users/saikat1116",
+  },
+  {
     title: "Less Than 100 Rank in CSS Battle.",
     link: "https://cssbattle.dev/player/AWYri46UxIZ9JfCWkVIWUW1MQeP2",
   },
@@ -19,5 +23,13 @@ export const AchievementData: AchievementType[] = [
   {
     title: "Completed Hacktoberfest 2023 With Full Pledge.",
     link: "https://www.holopin.io/@psykat1116#",
+  },
+  {
+    title: "Solve More Than 650+ Question on GFG",
+    link: "https://www.geeksforgeeks.org/user/ss25nvhb/",
+  },
+  {
+    title: "Participate In JWOC 2022, 2023 as an Mentee & Mentor",
+    link: "https://www.jwoc.tech/",
   },
 ];

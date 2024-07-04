@@ -5,7 +5,7 @@ import {
   BiLogoTypescript,
 } from "react-icons/bi";
 import { BsCloudArrowUpFill } from "react-icons/bs";
-import { DiHtml5Connectivity } from "react-icons/di";
+import { CiStreamOn } from "react-icons/ci";
 import {
   FaBootstrap,
   FaCss3Alt,
@@ -34,6 +34,7 @@ import {
   SiPostman,
   SiPrisma,
   SiShadcnui,
+  SiSocketdotio,
   SiSupabase,
 } from "react-icons/si";
 import {
@@ -88,6 +89,10 @@ export const TechCategoryData: TechCategoryType[] = [
   {
     title: "Payment",
     url: "payment",
+  },
+  {
+    title: "Websocket",
+    url: "websocket",
   },
 ];
 
@@ -287,11 +292,21 @@ export const SkillData: SkillType[] = [
   {
     name: "Socket.IO",
     category: "websocket",
-    icon: DiHtml5Connectivity,
+    icon: SiSocketdotio,
   },
   {
     name: "Stripe",
     category: "payment",
     icon: FaStripe,
   },
+  {
+    name: "LiveKit",
+    category: "websocket",
+    icon: CiStreamOn,
+  },
+  {
+    name: "Neon DB",
+    category: "database",
+    icon: TbBrandDatabricks,
+  }
 ];
