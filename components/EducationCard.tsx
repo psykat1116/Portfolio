@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 import { TbHexagonFilled } from "react-icons/tb";
 
@@ -20,7 +19,7 @@ const EducationCard: React.FC<EducationCardProps> = ({
   time,
 }) => {
   return (
-    <div className="relative text-lightprimary flex flex-col items-center w-full md:w-3/4 pl-8">
+    <div className="relative text-lightprimary flex flex-col items-center w-full lg:w-3/4 pl-8">
       <TbHexagonFilled className="absolute h-5 w-5 left-0 text-redcolor mt-1" />
       <div className="flex flex-col sm:flex-row justify-between w-full items-start md:items-center text-lg md:text-xl tracking-wide">
         <Link href={instituteLink} target="_blank">
