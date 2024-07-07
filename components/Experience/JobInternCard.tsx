@@ -1,8 +1,6 @@
 import Link from "next/link";
-import React from "react";
-import { TbHexagonFilled } from "react-icons/tb";
-import CanvasImage from "./CanvasImage";
 import Image from "next/image";
+import { TbHexagonFilled } from "react-icons/tb";
 
 interface JobInternCardProps {
   title: string;

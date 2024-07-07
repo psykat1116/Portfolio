@@ -1,7 +1,6 @@
-import React from "react";
-import Marker from "./Marker";
+import Marker from "@/components/Marker";
 import { EducationData, EducationDataType } from "@/utils/EducationData";
-import EducationCard from "./EducationCard";
+import EducationCard from "@/components/Education/EducationCard";
 
 const Education = () => {
   return (

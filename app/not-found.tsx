@@ -1,5 +1,6 @@
-import CanvasText from "@/components/CanvasText";
 import Link from "next/link";
+
+import CanvasText from "@/components/Canvas/CanvasText";
 
 const NotFound = () => {
   return (

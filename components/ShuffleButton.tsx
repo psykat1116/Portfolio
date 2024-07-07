@@ -1,4 +1,3 @@
-import React from "react";
 import { PiHexagonBold } from "react-icons/pi";
 
 interface ShuffleButtonProps {

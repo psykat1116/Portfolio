@@ -1,11 +1,11 @@
-import Image from "next/image";
-import React from "react";
-import Batch from "./Batch";
 import Link from "next/link";
-import { Stack } from "@/utils/TechStack";
-import { TbHexagonFilled } from "react-icons/tb";
+import Image from "next/image";
 import { FaGithub } from "react-icons/fa6";
 import { IoGlobeOutline } from "react-icons/io5";
+import { TbHexagonFilled } from "react-icons/tb";
+
+import { Stack } from "@/utils/TechStack";
+import Batch from "@/components/TechSkill/Batch";
 
 interface ImageBoxProps {
   title: string;
@@ -37,7 +37,7 @@ const ImageBox: React.FC<ImageBoxProps> = ({
         />
         <div className="flex flex-col items-start gap-3 mt-3">
           <div className="flex flex-col items-start md:flex-row gap-4 md:items-center">
-            <h1 className="text-3xl md:text-5xl tracking-wider uppercase text-left">
+            <h1 className="text-2xl md:text-5xl tracking-wider uppercase text-left">
               {title}
             </h1>
             <div className="flex items-center gap-2">
@@ -57,7 +57,7 @@ const ImageBox: React.FC<ImageBoxProps> = ({
               </Link>
             </div>
           </div>
-          <p className="text-xl font-poppins">{description}</p>
+          <p className="font-poppins text-sm">{description}</p>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-2 font-thin w-full">
             {techStack.map((tech) => (
               <Batch key={tech.name} text={tech.name} icon={tech.icon} />

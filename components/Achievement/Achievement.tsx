@@ -1,11 +1,13 @@
-import React from "react";
-import Marker from "./Marker";
+import Marker from "@/components/Marker";
 import { AchievementData } from "@/utils/AchievementData";
-import AchievementCard from "./AchievementCard";
+import AchievementCard from "@/components/Achievement/AchievementCard";
 
 const Achievement = () => {
   return (
-    <div className="p-5 w-full min-h-full font-bold text-lightprimary">
+    <div
+      id="achievement"
+      className="p-5 w-full min-h-full font-bold text-lightprimary"
+    >
       <div className="flex items-center">
         <Marker />
         <div className="ml-2 text-2xl tracking-wider">Achievements</div>

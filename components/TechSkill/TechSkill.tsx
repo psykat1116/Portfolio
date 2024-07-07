@@ -1,13 +1,14 @@
 "use client";
-import React, { useState } from "react";
-import Marker from "./Marker";
+import { useState } from "react";
+
+import Marker from "@/components/Marker";
 import {
   SkillData,
   SkillType,
   TechCategoryData,
   TechCategoryType,
 } from "@/utils/TechSkillData";
-import Batch from "./Batch";
+import Batch from "@/components/TechSkill/Batch";
 
 const TechSkill = () => {
   const [active, setActive] = useState("");
@@ -24,7 +25,10 @@ const TechSkill = () => {
   };
 
   return (
-    <div className="p-5 w-full min-h-full font-bold text-lightprimary">
+    <div
+      id="techskill"
+      className="p-5 w-full min-h-full font-bold text-lightprimary"
+    >
       <div className="flex items-center">
         <Marker />
         <div className="ml-2 text-2xl tracking-wider">Technical Skills</div>

@@ -1,14 +1,14 @@
 import Footer from "@/components/Footer";
 import Intro from "@/components/Intro";
 import Navbar from "@/components/Navbar";
-import Project from "@/components/Project";
+import Project from "@/components/Project/Project";
 import Seperator from "@/components/Seperator";
-import Experience from "@/components/Experience";
-import Contact from "@/components/Contact";
-import Education from "@/components/Education";
-import Achievement from "@/components/Achievement";
-import TechSkill from "@/components/TechSkill";
-import Profile from "@/components/Profile";
+import Experience from "@/components/Experience/Experience";
+import Contact from "@/components/Contact/Contact";
+import Education from "@/components/Education/Education";
+import Achievement from "@/components/Achievement/Achievement";
+import TechSkill from "@/components/TechSkill/TechSkill";
+import Profile from "@/components/Profile/Profile";
 
 const Home = () => {
   return (
@@ -23,13 +23,13 @@ const Home = () => {
       <Seperator />
       <Education />
       <Seperator />
-      <Profile />
-      <Seperator />
-      <TechSkill />
-      <Seperator />
       <Project />
       <Seperator />
       <Achievement />
+      <Seperator />
+      <Profile />
+      <Seperator />
+      <TechSkill />
       <Seperator />
       <Contact />
     </div>

@@ -1,11 +1,13 @@
-import React from "react";
-import Marker from "./Marker";
-import JobInternCard from "./JobInternCard";
+import Marker from "@/components/Marker";
+import JobInternCard from "@/components/Experience/JobInternCard";
 import { ExperienceData, ExperienceType } from "@/utils/ExperienceData";
 
 const Experience = () => {
   return (
-    <div className="p-5 w-full min-h-full font-bold text-lightprimary">
+    <div
+      id="experience"
+      className="p-5 w-full min-h-full font-bold text-lightprimary"
+    >
       <div className="flex items-center">
         <Marker />
         <div className="ml-2 text-2xl tracking-wider">Experience</div>

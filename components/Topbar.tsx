@@ -1,9 +1,10 @@
-import React, { useState } from "react";
-import ShuffleButton from "./ShuffleButton";
 import Link from "next/link";
 import Image from "next/image";
-import { Words } from "@/utils/Words";
+import { useState } from "react";
 import { useMediaQuery } from "usehooks-ts";
+
+import { Words } from "@/utils/Words";
+import ShuffleButton from "@/components/ShuffleButton";
 
 interface TopbarProps {
   open: boolean;

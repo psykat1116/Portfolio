@@ -1,11 +1,10 @@
-import React from "react";
-import Marker from "./Marker";
-import ImageBox from "./ImageBox";
+import Marker from "@/components/Marker";
+import ImageBox from "@/components/Project/ImageBox";
 import { projects } from "@/utils/TechStack";
 
 const Project = () => {
   return (
-    <div className="p-5 w-full min-h-full font-bold text-lightprimary">
+    <div id="project" className="p-5 w-full min-h-full font-bold text-lightprimary">
       <div className="flex items-center">
         <Marker />
         <div className="ml-2 text-2xl tracking-wider">Projects</div>

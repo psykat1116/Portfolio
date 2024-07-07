@@ -1,9 +1,8 @@
 "use client";
-import React from "react";
 import Image from "next/image";
-import BannerItem from "./BannerItem";
 import { AnimatePresence } from "framer-motion";
-import CanvasImage from "./CanvasImage";
+
+import BannerItem from "@/components/BannerItem";
 
 const Intro = () => {
   return (
@@ -21,7 +20,6 @@ const Intro = () => {
           className="relative object-cover filter grayscale rounded-md shadow-md"
           fill
         />
-        {/* <CanvasImage /> */}
       </div>
     </div>
   );

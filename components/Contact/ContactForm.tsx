@@ -1,8 +1,8 @@
 "use client";
-import React, { ElementRef, useRef, useState } from "react";
-import { useForm, ValidationError } from "@formspree/react";
 import { toast } from "sonner";
 import { IoIosSend } from "react-icons/io";
+import { ElementRef, useRef, useState } from "react";
+import { useForm, ValidationError } from "@formspree/react";
 
 const ContactForm = () => {
   const formRef = useRef<ElementRef<"form">>(null);

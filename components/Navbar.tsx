@@ -1,9 +1,9 @@
 "use client";
-import React, { useState, useRef } from "react";
-import ExternalLink from "./ExternalLink";
+import { useState, useRef } from "react";
 import { useOnClickOutside } from "usehooks-ts";
-import Topbar from "./Topbar";
-import Text from "./Text";
+
+import Topbar from "@/components/Topbar";
+import Text from "@/components/Text";
 
 const Navbar = () => {
   const NavRef = useRef(null);
@@ -20,18 +20,19 @@ const Navbar = () => {
         ref={NavRef}
       >
         <div
-          className={`w-full bg-lightprimary h-[80vh] text-[#010101] ${
-            open ? "translate-y-0" : "-translate-y-[80vh]"
-          } transition-all duration-700 flex flex-col items-center justify-between ease-in-out z-[5] gap-5 pb-5`}
+          className={`w-full bg-lightprimary h-screen text-[#010101] ${
+            open ? "translate-y-0" : "-translate-y-[100vh]"
+          } transition-all duration-700 flex flex-col items-center justify-start ease-in-out z-[5] gap-5 pb-5`}
         >
           <Topbar open={open} setOpen={setOpen} isNavOpen />
-          <div className="flex items-center text-7xl flex-col justify-between gap-6 w-full">
-            <Text text="About" />
-            <Text text="Project" />
-            <Text text="Experience" />
-            <Text text="Contact" />
+          <div className="flex items-center text-7xl flex-col justify-between gap-4 w-full">
+            <Text text="Experience" href="#experience" />
+            <Text text="Project" href="#project" />
+            <Text text="Profile" href="#profile" />
+            <Text text="Achievement" href="#achievement" />
+            <Text text="Tech Skill" href="#techskill" />
+            <Text text="Contact Me" href="#contact" />
           </div>
-          <ExternalLink />
         </div>
       </nav>
       <Topbar open={open} setOpen={setOpen} />

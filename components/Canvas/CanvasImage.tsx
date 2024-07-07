@@ -1,5 +1,5 @@
 "use client";
-import React, { ElementRef, useEffect, useRef } from "react";
+import { ElementRef, useEffect, useRef } from "react";
 import { mouse, Particle } from "@/utils/Particle";
 
 const CanvasImage = () => {

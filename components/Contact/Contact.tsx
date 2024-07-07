@@ -1,10 +1,12 @@
-import React from "react";
-import Marker from "./Marker";
-import ContactForm from "./ContactForm";
+import Marker from "@/components/Marker";
+import ContactForm from "@/components/Contact/ContactForm";
 
 const Contact = () => {
   return (
-    <div className="p-5 w-full min-h-full font-bold text-lightprimary">
+    <div
+      id="contact"
+      className="p-5 w-full min-h-full font-bold text-lightprimary"
+    >
       <div className="flex items-center">
         <Marker />
         <div className="ml-2 text-2xl tracking-wider">Contact Me</div>

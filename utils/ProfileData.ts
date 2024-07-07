@@ -1,5 +1,5 @@
 import { IconType } from "react-icons";
-import { FaBattleNet, FaGithub, FaLinkedin } from "react-icons/fa6";
+import { FaBattleNet, FaCodepen, FaGithub, FaLinkedin } from "react-icons/fa6";
 import { GiHorseHead } from "react-icons/gi";
 import {
   SiCodechef,
@@ -11,7 +11,7 @@ import {
 export type ProfileType = {
   name: string;
   url: string;
-  icon?: IconType;
+  icon: IconType;
 };
 
 export const ProfileData: ProfileType[] = [
@@ -54,5 +54,10 @@ export const ProfileData: ProfileType[] = [
     name: "CSS Battle",
     url: "https://cssbattle.dev/player/AWYri46UxIZ9JfCWkVIWUW1MQeP2",
     icon: FaBattleNet,
+  },
+  {
+    name: "Codepen",
+    url: "https://codepen.io/psykat1611",
+    icon: FaCodepen,
   },
 ];
