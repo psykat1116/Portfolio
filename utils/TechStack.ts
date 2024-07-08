@@ -36,6 +36,7 @@ import { TbBrandReact, TbBrandDatabricks, TbDragDrop } from "react-icons/tb";
 import { PiConfettiFill } from "react-icons/pi";
 import { FaHtml5, FaCss3, FaBell } from "react-icons/fa6";
 import { MdViewKanban } from "react-icons/md";
+import { CiStreamOn } from "react-icons/ci";
 
 export type Stack = {
   name: string;
@@ -199,5 +200,24 @@ export const projects: Project[] = [
     src: "/Image/Thread.png",
     website: "https://thread-clone-silk.vercel.app/",
     gitUrl: "https://github.com/psykat1116/Thread",
+  },
+  {
+    title: "Syncro",
+    techStack: [
+      { name: "Next JS", icon: RiNextjsFill },
+      { name: "Typecript", icon: BiLogoTypescript },
+      { name: "Zustand", icon: SiReact },
+      { name: "Clerk", icon: SiClerk },
+      { name: "NeonDB", icon: TbBrandDatabricks },
+      { name: "Shadcn UI", icon: SiShadcnui },
+      { name: "Tailwind CSS", icon: RiTailwindCssFill },
+      { name: "LiveKit", icon: CiStreamOn },
+      { name: "Prisma", icon: SiPrisma },
+    ],
+    description:
+      "Syncro, a personal streaming platform designed to provide a seamless and dynamic experience. Developed with cutting-edge technologies such as Next.js, Tailwind CSS, TypeScript, LiveKit Ingress, Neon DB, Shadcn-UI, Prisma ORM, Syncro is engineered for both Performance and Aesthetics.",
+    src: "/Image/Syncro.png",
+    website: "https://syncro-eight.vercel.app/",
+    gitUrl: "https://github.com/psykat1116/Syncro",
   },
 ];

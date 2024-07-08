@@ -37,7 +37,7 @@ const Topbar: React.FC<TopbarProps> = ({ open, setOpen, isNavOpen }) => {
       </Link>
       {!isNavOpen && (
         <div
-          className="text-xl sm:text-2xl md:text-3xl tracking-wider font-normal text-lightprimary uppercase h-7 sm:h-8 md:h-9 flex items-center lg:items-start gap-1 overflow-hidden group transition-all duration-500 ease-in-out"
+          className="text-xl sm:text-2xl md:text-3xl tracking-wider font-normal text-lightprimary uppercase h-7 sm:h-8 md:h-9 flex items-start lg:items-start gap-1 overflow-hidden group transition-all duration-500 ease-in-out"
           onMouseEnter={handleStart}
           onMouseLeave={handleEnd}
         >
@@ -53,7 +53,7 @@ const Topbar: React.FC<TopbarProps> = ({ open, setOpen, isNavOpen }) => {
           </ol>
           <p className="text-redcolor select-none hidden sm:block">Samanta</p>
           <Link
-            className="my-1.5 ml-3 px-2 bg-redcolor rounded-sm text-base flex items-center justify-center cursor-pointer"
+            className="my-1 md:my-1.5 ml-3 px-2 bg-redcolor rounded-sm text-base flex items-center justify-center cursor-pointer"
             href="https://maroon-ilysa-10.tiiny.site"
             target="_blank"
           >
