@@ -18,7 +18,7 @@ export const ExperienceData = [
     lines: [
       `Learn About React JS A Javascript Framework With The Concept Of JSX, Components, Hooks, Props, State, and Lifecycle.`,
       `Learn About React Router, State Management, Class Based, and Functional Components.`,
-      `Learn To Use Tailwind CSS, Redux State Management, Form Validation, Integration With Different Databases, With Backend, and Authentication.`,
+      `Learn To Use Tailwind CSS, Redux State Management, Form Validation, Integration With Databases, and Authentication.`,
       `Develop Projects Like TODO List, E-Commerce UI, React Dashboard, Spotify Clone, and Many More.`,
     ],
     companyLink: "https://celebaltech.com/",

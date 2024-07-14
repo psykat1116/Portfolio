@@ -31,6 +31,7 @@ import {
   SiLodash,
   SiRadixui,
   SiFormspree,
+  SiRazorpay,
 } from "react-icons/si";
 import { TbBrandReact, TbBrandDatabricks, TbDragDrop } from "react-icons/tb";
 import { PiConfettiFill } from "react-icons/pi";
@@ -84,9 +85,10 @@ export const projects: Project[] = [
       { name: "Cloudinary", icon: SiCloudinary },
       { name: "React Form", icon: SiReact },
       { name: "Zustand", icon: SiReact },
+      { name: "Razorpay", icon: SiRazorpay },
     ],
     description:
-      "Airbnb Clone Is a Clone Website Of The Famouse Hotel Booking Site Airbnb Made Using NextJS 13, Tailwind CSS, Prisma, MongoDB, Next Auth And Much More.",
+      "Airbnb Clone Is a Clone Website Of The Famouse Hotel Booking Site Airbnb Made Using NextJS 13, Tailwind CSS, Prisma, MongoDB, Next Auth, Razorpay Payment Gateway And Much More.",
     src: "/Image/Airbnb.png",
     website: "https://airbnb-psi-liart.vercel.app/",
     gitUrl: "https://github.com/psykat1116/Airbnb",

@@ -33,6 +33,7 @@ import {
   SiMysql,
   SiPostman,
   SiPrisma,
+  SiRazorpay,
   SiShadcnui,
   SiSocketdotio,
   SiSupabase,
@@ -300,6 +301,11 @@ export const SkillData: SkillType[] = [
     icon: FaStripe,
   },
   {
+    name: "Razorpay",
+    category: "payment",
+    icon: SiRazorpay,
+  },
+  {
     name: "LiveKit",
     category: "websocket",
     icon: CiStreamOn,
@@ -308,5 +314,5 @@ export const SkillData: SkillType[] = [
     name: "Neon DB",
     category: "database",
     icon: TbBrandDatabricks,
-  }
+  },
 ];
