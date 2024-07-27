@@ -17,8 +17,7 @@ export const ExperienceData = [
     companyLocation: "Jalpaiguri, West Bengal",
     lines: [
       `Learn About React JS A Javascript Framework With The Concept Of JSX, Components, Hooks, Props, State, and Lifecycle.`,
-      `Learn About React Router, State Management, Class Based, and Functional Components.`,
-      `Learn To Use Tailwind CSS, Redux State Management, Form Validation, Integration With Databases, and Authentication.`,
+      `Learn To Use Tailwind CSS, Redux, Form Validation, Integration With Databases, and Auth.`,
       `Develop Projects Like TODO List, E-Commerce UI, React Dashboard, Spotify Clone, and Many More.`,
     ],
     companyLink: "https://celebaltech.com/",

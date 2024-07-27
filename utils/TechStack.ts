@@ -32,6 +32,9 @@ import {
   SiRadixui,
   SiFormspree,
   SiRazorpay,
+  SiCloudflareworkers,
+  SiHono,
+  SiRedis,
 } from "react-icons/si";
 import { TbBrandReact, TbBrandDatabricks, TbDragDrop } from "react-icons/tb";
 import { PiConfettiFill } from "react-icons/pi";
@@ -221,5 +224,22 @@ export const projects: Project[] = [
     src: "/Image/Syncro.png",
     website: "https://syncro-eight.vercel.app/",
     gitUrl: "https://github.com/psykat1116/Syncro",
+  },
+  {
+    title: "Zenitsu",
+    techStack: [
+      { name: "Next JS", icon: RiNextjsFill },
+      { name: "Hono JS", icon: SiHono },
+      { name: "Cloudflare", icon: SiCloudflareworkers },
+      { name: "Shadcn UI", icon: SiShadcnui },
+      { name: "Tailwind CSS", icon: RiTailwindCssFill },
+      { name: "Typescript", icon: BiLogoTypescript },
+      { name: "Redis", icon: SiRedis },
+    ],
+    description:
+      "Zenitsu a Search API Made Using Redis, MongoDB, Cloudfare Workers, Hono JS For Speed Comparison With Other Databases.",
+    src: "/Image/Zenitsu.png",
+    website: "https://zenitsu-six.vercel.app/",
+    gitUrl: "https://github.com/psykat1116/Zenitsu",
   },
 ];
