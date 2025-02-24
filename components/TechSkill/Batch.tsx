@@ -15,9 +15,9 @@ const Batch: React.FC<BatchProps> = ({
 }) => {
   return (
     <div
-      className={`py-1 px-2 flex items-center text-white bg-[#222650] tracking-wider text-lg rounded-[4px] ${className}`}
+      className={`flex items-center text-white bg-[#222650] tracking-wider text-lg rounded-[4px] ${className}`}
     >
-      <Icon className={`mr-3 h-5 w-5 ${iconClassName}`} />
+      <Icon className={`mr-3 h-4 w-4 ${iconClassName}`} />
       {text}
     </div>
   );

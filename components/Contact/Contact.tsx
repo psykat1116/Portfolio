@@ -1,17 +1,23 @@
-import Marker from "@/components/Marker";
+"use client";
+import Text from "@/components/Text";
 import ContactForm from "@/components/Contact/ContactForm";
+import { useMediaQuery } from "usehooks-ts";
 
 const Contact = () => {
+  const isMedium = useMediaQuery("(max-width: 768px)");
   return (
     <div
       id="contact"
       className="p-5 w-full min-h-full font-bold text-lightprimary"
     >
-      <div className="flex items-center">
-        <Marker />
-        <div className="ml-2 text-2xl tracking-wider">Contact Me</div>
+      <div
+        className={`tracking-wider flex items-center justify-center w-full ${
+          isMedium ? "text-4xl" : "text-6xl"
+        }`}
+      >
+        <Text text="Get In Touch" size={15} />
       </div>
-      <div className="flex w-full flex-col md:flex-row items-start justify-start gap-5 p-2">
+      <div className="flex w-full flex-col md:flex-row items-start justify-start gap-5 p-2 mt-10">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14758.75593598702!2d87.64297534204283!3d22.365369517923536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02b1aa1d3967a7%3A0xd5dc2baa4e3e8b36!2sHaur%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1718808069439!5m2!1sen!2sin"
           width="600"

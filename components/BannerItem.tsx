@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const item = {
   initial: {
-    y: "34vh",
+    y: "35vh",
     transition: {
       duration: 0.5,
       ease: [0.37, 0, 0.63, 1],

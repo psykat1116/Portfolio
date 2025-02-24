@@ -1,13 +1,19 @@
-import Marker from "@/components/Marker";
-import { EducationData, EducationDataType } from "@/utils/EducationData";
+"use client";
+import Text from "@/components/Text";
 import EducationCard from "@/components/Education/EducationCard";
+import { EducationData, EducationDataType } from "@/utils/EducationData";
+import { useMediaQuery } from "usehooks-ts";
 
 const Education = () => {
+  const isMedium = useMediaQuery("(max-width: 768px)");
   return (
     <div className="p-5 w-full min-h-full font-bold text-lightprimary">
-      <div className="flex items-center">
-        <Marker />
-        <div className="ml-2 text-2xl tracking-wider">Education</div>
+      <div
+        className={`tracking-wider flex items-center justify-center w-full ${
+          isMedium ? "text-4xl" : "text-6xl"
+        }`}
+      >
+        <Text text="Education" size={15} />
       </div>
       <div className="relative w-full flex flex-col gap-5 items-start pt-4 before:absolute before:content-[''] before:h-full before:w-1 before:top-0 before:left-2 before:bg-redcolor">
         {EducationData.map((exp: EducationDataType) => (
