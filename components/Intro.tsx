@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 
 import BannerItem from "@/components/BannerItem";

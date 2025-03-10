@@ -6,6 +6,7 @@ import { ExperienceData, ExperienceType } from "@/utils/ExperienceData";
 
 const Experience = () => {
   const isMedium = useMediaQuery("(max-width: 768px)");
+
   return (
     <div
       id="experience"
@@ -18,7 +19,7 @@ const Experience = () => {
       >
         <Text text="Experience" size={15} />
       </div>
-      <div className="relative w-full flex flex-col gap-16 items-start pt-4 before:absolute before:content-[''] before:h-full before:w-1 before:top-0 before:left-2 before:bg-redcolor mt-10">
+      <div className="relative w-full flex flex-col gap-10 items-start pt-4 mt-6">
         {ExperienceData.map((exp: ExperienceType) => (
           <JobInternCard {...exp} key={exp.time} />
         ))}

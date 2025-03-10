@@ -13,11 +13,11 @@ export const ExperienceData = [
   {
     title: "React Developer Summer Intern",
     company: "Celebal Technologies Pvt. Ltd.",
-    time: "May 2024 - Present",
+    time: "May 2024 - July 2024",
     companyLocation: "Jalpaiguri, West Bengal",
     lines: [
-      `Learn About React JS A Javascript Framework With The Concept Of JSX, Components, Hooks, Props, State, and Lifecycle.`,
-      `Learn To Use Tailwind CSS, Redux, Form Validation, Integration With Databases, and Auth.`,
+      `Learn About The Concept Of JSX, Components, Hooks, Props, State, and Lifecycle.`,
+      `Learn To Use Tailwind CSS, Redux, Form Validation, Integration With Databases, and Authentication.`,
       `Develop Projects Like TODO List, E-Commerce UI, React Dashboard, Spotify Clone, and Many More.`,
     ],
     companyLink: "https://celebaltech.com/",

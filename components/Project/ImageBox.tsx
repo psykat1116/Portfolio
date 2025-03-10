@@ -1,10 +1,11 @@
 import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
 import { FaGithub } from "react-icons/fa6";
 import { IoGlobeOutline } from "react-icons/io5";
 
 import { Stack } from "@/utils/TechStack";
 import Batch from "@/components/TechSkill/Batch";
-import Image from "next/image";
 
 interface ImageBoxProps {
   title: string;
@@ -15,6 +16,24 @@ interface ImageBoxProps {
   gitUrl: string;
 }
 
+const offscreen = {
+  translateY: "50%",
+  opacity: 0,
+  transition: {
+    duration: 0.5,
+    ease: [0.37, 0, 0.63, 1],
+  },
+};
+
+const onscreen = {
+  translateY: 0,
+  opacity: 1,
+  transition: {
+    duration: 0.7,
+    ease: [0, 0.55, 0.45, 1],
+  },
+};
+
 const ImageBox = ({
   title,
   src,
@@ -24,7 +43,12 @@ const ImageBox = ({
   gitUrl,
 }: ImageBoxProps) => {
   return (
-    <div className="relative flex flex-col gap-2 max-w-[440px] bg-[#1b1b47] rounded-xl shadow-md">
+    <motion.div
+      initial={offscreen}
+      whileInView={onscreen}
+      viewport={{ once: true }}
+      className="relative flex flex-col gap-2 max-w-[440px] bg-[#1b1b47] rounded-xl shadow-md p-2"
+    >
       <Image
         src={src}
         alt={title}
@@ -66,7 +90,7 @@ const ImageBox = ({
           </Link>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

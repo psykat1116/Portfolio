@@ -2,7 +2,27 @@
 import Text from "@/components/Text";
 import Batch from "@/components/TechSkill/Batch";
 import { Field, SkillData, SkillType } from "@/utils/TechSkillData";
+
+import { motion } from "framer-motion";
 import { useMediaQuery } from "usehooks-ts";
+
+const offscreen = {
+  translateY: 200,
+  opacity: 0,
+  transition: {
+    duration: 0.5,
+    ease: [0.37, 0, 0.63, 1],
+  },
+};
+
+const onscreen = {
+  translateY: 0,
+  opacity: 1,
+  transition: {
+    duration: 0.7,
+    ease: [0, 0.55, 0.45, 1],
+  },
+};
 
 const TechSkill = () => {
   const isMedium = useMediaQuery("(max-width: 768px)");
@@ -20,8 +40,11 @@ const TechSkill = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 rounded-md mt-10">
         {SkillData.map((skill: SkillType) => (
-          <div
+          <motion.div
             key={skill.category}
+            initial={offscreen}
+            whileInView={onscreen}
+            viewport={{ once: true }}
             className="p-4 flex flex-col gap-4 bg-[#1b1b47] shadow-md rounded-md"
           >
             <h1 className="text-3xl tracking-wider">{skill.category}</h1>
@@ -36,7 +59,7 @@ const TechSkill = () => {
                 />
               ))}
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
