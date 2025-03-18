@@ -19,12 +19,12 @@ const Navbar = () => {
         />
       </Link>
       <div className="md:flex hidden items-center text-2xl justify-between gap-3 ml-10">
-        <Text text="Experience" href="#experience" />
-        <Text text="Project" href="#project" />
-        <Text text="Profile" href="#profile" />
-        <Text text="Achievement" href="#achievement" />
-        <Text text="Tech Skill" href="#techskill" />
-        <Text text="Contact Me" href="#contact" />
+        <Text text="Experience" href="#experience" animate={false} />
+        <Text text="Project" href="#project" animate={false} />
+        <Text text="Profile" href="#profile" animate={false} />
+        <Text text="Achievement" href="#achievement" animate={false} />
+        <Text text="Tech Skill" href="#techskill" animate={false} />
+        <Text text="Contact Me" href="#contact" animate={false} />
       </div>
       <Link
         className="text-xl scale-90 md:scale-100 px-3 py-0.5 bg-redcolor rounded-sm text-lightprimary flex items-center justify-center cursor-pointer hover:bg-redcolor/85 group"

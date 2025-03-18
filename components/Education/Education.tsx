@@ -15,7 +15,7 @@ const Education = () => {
       >
         <Text text="Education" size={15} />
       </div>
-      <div className="relative w-full flex flex-col gap-5 items-start pt-4 before:absolute before:content-[''] before:h-full before:w-1 before:top-0 before:left-2 before:bg-redcolor">
+      <div className="relative w-full flex flex-col gap-5 items-start mt-10">
         {EducationData.map((exp: EducationDataType) => (
           <EducationCard {...exp} key={exp.time} />
         ))}

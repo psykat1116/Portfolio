@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { TbHexagonFilled } from "react-icons/tb";
+import { motion } from "framer-motion";
 
 interface EducationCardProps {
   institute: string;
@@ -10,6 +10,24 @@ interface EducationCardProps {
   locationLink: string;
 }
 
+const offscreen = {
+  translateY: "50%",
+  opacity: 0,
+  transition: {
+    duration: 0.5,
+    ease: [0.37, 0, 0.63, 1],
+  },
+};
+
+const onscreen = {
+  translateY: 0,
+  opacity: 1,
+  transition: {
+    duration: 0.7,
+    ease: [0, 0.55, 0.45, 1],
+  },
+};
+
 const EducationCard: React.FC<EducationCardProps> = ({
   info,
   institute,
@@ -19,8 +37,12 @@ const EducationCard: React.FC<EducationCardProps> = ({
   time,
 }) => {
   return (
-    <div className="relative text-lightprimary flex flex-col items-center w-full lg:w-3/4 pl-8">
-      <TbHexagonFilled className="absolute h-5 w-5 left-0 text-redcolor mt-1" />
+    <motion.div
+      initial={offscreen}
+      whileInView={onscreen}
+      viewport={{ once: true }}
+      className="relative text-lightprimary flex flex-col items-center w-full bg-[#1b1b47] p-4 rounded-md shadow-md"
+    >
       <div className="flex flex-col sm:flex-row justify-between w-full items-start md:items-center text-lg md:text-xl tracking-wide">
         <Link href={instituteLink} target="_blank">
           {institute}
@@ -33,7 +55,7 @@ const EducationCard: React.FC<EducationCardProps> = ({
           {location}
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

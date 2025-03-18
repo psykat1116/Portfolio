@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { motion } from "framer-motion";
 import { TbHexagonFilled } from "react-icons/tb";
 
 interface TextProps {
@@ -6,18 +7,43 @@ interface TextProps {
   className?: string;
   size?: number;
   href?: string;
+  animate?: boolean;
 }
+
+const offscreen = {
+  translateX: "50%",
+  opacity: 0,
+  transition: {
+    duration: 0.5,
+    ease: [0.37, 0, 0.63, 1],
+  },
+};
+
+const onscreen = {
+  translateX: 0,
+  opacity: 1,
+  transition: {
+    duration: 0.7,
+    ease: [0, 0.55, 0.45, 1],
+  },
+};
 
 const Text: React.FC<TextProps> = ({
   text,
   className,
   size = 8,
   href = "/",
+  animate = true,
 }) => {
   return (
-    <div className="flex items-end gap-2 group">
+    <motion.div
+      initial={offscreen}
+      whileInView={onscreen}
+      viewport={animate ? { once: true, margin: "-100px" } : { once: true }}
+      className="flex items-end gap-2 group"
+    >
       <TbHexagonFilled
-        className="text-redcolor opacity-100 group-hover:opacity-0 group-hover:transition-all group-hover:duration-100 group-hover:ease-in-out translate-x-0 group-hover:translate-x-10 mb-2"
+        className="text-redcolor opacity-100 group-hover:opacity-0 group-hover:transition-all group-hover:duration-100 group-hover:ease-in-out translate-x-1 group-hover:translate-x-10 mb-2"
         size={size}
       />
       <Link
@@ -27,7 +53,7 @@ const Text: React.FC<TextProps> = ({
       >
         {text}
       </Link>
-    </div>
+    </motion.div>
   );
 };
 
