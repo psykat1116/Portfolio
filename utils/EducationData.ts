@@ -9,6 +9,14 @@ export interface EducationDataType {
 
 export const EducationData: EducationDataType[] = [
   {
+    institute: "Indian Institute of Technology, Kharagpur",
+    time: "July 2025 - June 2027",
+    info: "Master of Technology in Computer Science & Engineering",
+    location: "Kharagpur, West Bengal",
+    instituteLink: "https://www.iitkgp.ac.in/",
+    locationLink: "https://maps.app.goo.gl/4Kx7oMQG5KHwbfWG8",
+  },
+  {
     institute: "Jalpaiguri Government Engineering College",
     time: "June 2021 - June 2025",
     info: "Bachelor of Technology in Information Technology CGPA: 9.27",

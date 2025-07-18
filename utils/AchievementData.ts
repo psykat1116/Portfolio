@@ -5,6 +5,10 @@ export interface AchievementType {
 
 export const AchievementData: AchievementType[] = [
   {
+    title: "Secured AIR 289 in GATE 2025",
+    link: "",
+  },
+  {
     title: "Solve More Than 850+ Questions On Leetcode. Max Rating 1736.",
     link: "https://leetcode.com/u/saikat1116/",
   },
