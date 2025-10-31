@@ -1,8 +1,9 @@
-import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
-import localFont from "next/font/local";
 import "./globals.css";
 import { Toaster } from "sonner";
+import type { Metadata } from "next";
+import localFont from "next/font/local";
+import { Poppins } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 
 const poppins = Poppins({
   style: ["normal", "italic"],
@@ -53,6 +54,19 @@ export const metadata: Metadata = {
     ],
   },
   metadataBase: new URL("https://portfolio-one-gilt-34.vercel.app/"),
+  keywords: [
+    "saikat samanta",
+    "saikat samanta portfolio",
+    "saikat samanta iit Kharagpur",
+    "saikat samanta iit kgp",
+    "saikat samnata jgec",
+    "psykat samanta",
+    "psykat_1116",
+    "psykat1116",
+    "psykat samnata portfolio",
+    "psykat portfolio",
+    'psykat iitkgp',
+  ]
 };
 
 export default function RootLayout({
@@ -68,6 +82,7 @@ export default function RootLayout({
         <div className="relative min-h-screen w-full flex justify-start items-center bg-lightprimary overflow-x-hidden flex-col p-3">
           <Toaster position="bottom-right" richColors />
           {children}
+          <Analytics />
         </div>
       </body>
     </html>
